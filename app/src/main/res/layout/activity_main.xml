@@ -3,24 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="@dimen/small"
     >
 
     <EditText
         android:id="@+id/numero1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Numero 1"
+        android:hint="@string/num1"
         android:inputType="number"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/small"
         />
     <EditText
         android:id="@+id/numero2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Numero 2"
+        android:hint="@string/num2"
         android:inputType="number"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/small"
         />
 
     <LinearLayout
@@ -34,28 +34,28 @@
             android:id="@+id/btnSumar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sumar"
+            android:text="@string/sumar"
             />
 
         <Button
             android:id="@+id/btnRest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Restar"
+            android:text="@string/restar"
             />
 
         <Button
             android:id="@+id/btnMul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mul"
+            android:text="@string/mul"
             />
 
         <Button
             android:id="@+id/btnDiv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Div"
+            android:text="@string/div"
             />
 
     </LinearLayout>
@@ -65,8 +65,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:textSize="90sp"
-        android:text="00"
+        android:textSize="@dimen/result"
+        android:text="@string/empty"
         />
 
 </LinearLayout>
