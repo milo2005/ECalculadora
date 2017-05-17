@@ -30,6 +30,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnDiv.setOnClickListener(this);
         btnMul.setOnClickListener(this);
         btnRest.setOnClickListener(this);
+
+        if(savedInstanceState != null){
+            resultado.setText(savedInstanceState.getString("rta"));
+        }
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("rta", resultado.getText().toString());
+        super.onSaveInstanceState(outState);
     }
 
     @Override
